@@ -1,4 +1,7 @@
 ﻿using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 
 namespace RulesOfSquash
 {
@@ -8,7 +11,7 @@ namespace RulesOfSquash
 		{
 			InitializeComponent();
 
-			MainPage = new RulesOfSquashPage();
+			MainPage = new MainPage();
 		}
 
 		protected override void OnStart()
